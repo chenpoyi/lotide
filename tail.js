@@ -8,10 +8,10 @@ const assertEqual = function(actual, expected) {
 };
 
 const tail = function(array) {
-  if(array.length > 1){
+  if (array.length > 1) {
     const newArray = array.slice(1);
     console.log(array);
-    return newArray;  
+    return newArray;
   } else {
     return [];
   }
@@ -25,3 +25,6 @@ assertEqual(words.length, 3); // original array should still have 3 elements!
 
 const result = tail(["Yoyo"]);
 console.log(result);
+
+const result2 = tail([]);
+console.log(result2);
