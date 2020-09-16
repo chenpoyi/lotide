@@ -8,7 +8,7 @@ const assertEqual = function(actual, expected) {
 };
 
 const countLetters = function(word) {
-  
+  word = word.split(" ").join("");
   let wordCount = {};
   for (let letter of word) {
     if (wordCount[letter]) {
@@ -21,7 +21,7 @@ const countLetters = function(word) {
 };
 //TEST CODE
 
-let result = countLetters('abcc');
+let result = countLetters('ab    cc');
 console.log(result);
 assertEqual(result['a'],1);
 assertEqual(result['b'],1);
