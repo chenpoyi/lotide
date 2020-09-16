@@ -11,14 +11,16 @@ const eqArrays = function(first, second) {
   if (first.length !== second.length) {
     return false;
   }
+  //Loop through each element of both arrays and compare.
   for (let i = 0; i < first.length; i++) {
     if (first[i] !== second[i]) {
       return false;
+      //return false if mismatch
     }
   }
-  return true;
+  return true; //return true if all matches
 };
-
+//TEST CODE
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 assertEqual(eqArrays([1, 2], [1, 2, 3]), false); // => should PASS
 assertEqual(eqArrays([1, 2, 3], [1, 2, "3"]), false); // => should PASS
