@@ -1,4 +1,4 @@
-const eqArrays = function (first, second) {
+const eqArrays = function(first, second) {
   //check if first and second arrays are of the same length
   if (first.length !== second.length) {
     return false;
@@ -13,7 +13,7 @@ const eqArrays = function (first, second) {
   return true; //return true if all matches
 };
 
-const assertArraysEqual = function (actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   //checks if eqArrays return true
   if (eqArrays(actual, expected)) {
     console.log(`✅ ✅ ✅ Assertion Passed: ${actual} === ${expected}`);
@@ -24,7 +24,7 @@ const assertArraysEqual = function (actual, expected) {
 
 
 
-const letterPositions = function (sentence) {
+const letterPositions = function(sentence) {
   const results = {};
   // logic to update results here
   for (let i = 0; i < sentence.length; i++) {
