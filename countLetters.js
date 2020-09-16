@@ -7,17 +7,22 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function(word){
+const countLetters = function(word) {
   
-  wordCount = {};
-  for(let letter of word){
-    if(wordCount[letter]){
-      wordCount[letter]+=1;
+  let wordCount = {};
+  for (let letter of word) {
+    if (wordCount[letter]) {
+      wordCount[letter] += 1;
     } else {
       wordCount[letter] = 1;
     }
   }
   return wordCount;
-}
+};
 //TEST CODE
-console.log(countLetters('Hello...'));
+
+let result = countLetters('abcc');
+console.log(result);
+assertEqual(result['a'],1);
+assertEqual(result['b'],1);
+assertEqual(result['c'],2);
