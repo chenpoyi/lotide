@@ -30,8 +30,8 @@ const eqObjects = function(object1, object2) {
     return false;
   }
   for (let key of keys1) {
-    if(Array.isArray(object1[key]) && Array.isArray(object2[key])){// checks if both values are arrays
-      if(eqArrays(object1[key], object2[key])){//check if 2 arrays equal
+    if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {// checks if both values are arrays
+      if (eqArrays(object1[key], object2[key])) {//check if 2 arrays equal
         return true;
       } else {
         return false;
@@ -45,7 +45,7 @@ const eqObjects = function(object1, object2) {
 };
 
 //TEST CODE
-//Primitives 
+//Primitives
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 assertEqual(eqObjects(ab, ba), true); // => true
