@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@paulchen647/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library. This is written for learning purposes.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/chenpoyi/lotide.git"
   },
-  "author": "",
+  "author": "Paul Chen  <paulchen647@gmail.com> (https://github.com/chenpoyi/)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chenpoyi/lotide/issues"
