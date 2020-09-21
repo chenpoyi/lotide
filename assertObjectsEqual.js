@@ -1,3 +1,5 @@
+const { assert } = require('console');
+
 const eqArrays = function(first, second) {
   //check if first and second arrays are of the same length
   if (first.length !== second.length) {
@@ -49,8 +51,10 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 //TEST CODE
-const obj1 = {a: '123', b: '567'};
-const obj2 = {a: '123', b: '567'};
-const obj3 = {a: '123', c: '567'};
-assertObjectsEqual(obj1, obj2);
-assertObjectsEqual(obj1, obj3);
+// const obj1 = {a: '123', b: '567'};
+// const obj2 = {a: '123', b: '567'};
+// const obj3 = {a: '123', c: '567'};
+// assertObjectsEqual(obj1, obj2);
+// assertObjectsEqual(obj1, obj3);
+
+module.exports = assertObjectsEqual;

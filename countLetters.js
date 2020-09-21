@@ -19,10 +19,12 @@ const countLetters = function(word) {
   }
   return wordCount;
 };
+
+module.exports = countLetters;
 //TEST CODE
 
-let result = countLetters('ab    cc');
-console.log(result);
-assertEqual(result['a'],1);
-assertEqual(result['b'],1);
-assertEqual(result['c'],2);
+// let result = countLetters('ab    cc');
+// console.log(result);
+// assertEqual(result['a'],1);
+// assertEqual(result['b'],1);
+// assertEqual(result['c'],2);

@@ -41,9 +41,10 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-const results = letterPositions("hello");
-console.log("Results: ", results);
-assertArraysEqual(results['h'], [0]);
-assertArraysEqual(results['e'], [1]);
-assertArraysEqual(results['l'], [2, 3]);
-assertArraysEqual(results['o'], [4]);
+module.exports = letterPositions;
+// const results = letterPositions("hello");
+// console.log("Results: ", results);
+// assertArraysEqual(results['h'], [0]);
+// assertArraysEqual(results['e'], [1]);
+// assertArraysEqual(results['l'], [2, 3]);
+// assertArraysEqual(results['o'], [4]);
